@@ -6,13 +6,19 @@
   "license": "MIT",
   "scripts": {
     "step-1:watch": "parcel ./src/step-1/index.html",
-    "step-2:watch": "parcel ./src/step-2/index.html"
+    "step-2:watch": "parcel ./src/step-2/index.html",
+    "step-3:watch": "parcel ./src/step-3/index.html",
+    "step-4:watch": "parcel ./src/step-4/index.html",
+    "step-4:build-feed": "parcel build ./src/step-4/feed/index.tsx -d build/feed --public-url ./",
+    "step-4:build-new-post": "parcel build ./src/step-4/new-post/index.tsx -d build/new-post --public-url ./"
   },
   "dependencies": {
     "@types/react": "^16.9.38",
+    "@types/react-datepicker": "^3.0.1",
     "@types/react-dom": "^16.9.8",
     "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
+    "react-datepicker": "^3.0.0",
     "react-dom": "^16.13.1",
     "typescript": "^3.9.5"
   },

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Step 3</title>
+    <link rel="stylesheet" href="../__shared/index.css" />
+  </head>
+  <body>
+    <form method="GET" action="/">
+      <div>
+        <label>Name</label>
+        <input name="name" type="text" />
+      </div>
+      <div>
+        <label>Vorname</label>
+        <input name="surname" type="text" />
+      </div>
+      <div>
+        <label>Erster Arbeitstag</label>
+        <input
+          name="firstDayOfWork"
+          type="text"
+          data-react-datepicker
+        />
+      </div>
+      <br />
+      <button type="submit">Speichern</button>
+    </form>
+    <script src="./index.tsx"></script>
+  </body>
+</html>

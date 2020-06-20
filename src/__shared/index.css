@@ -33,3 +33,19 @@ button:active {
 button:focus {
   outline: #03a8ff solid 2px;
 }
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+  margin-top: 1rem;
+}
+
+input[type="text"] {
+  background: white;
+  font: inherit;
+  transition: background 0.2s;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  outline-color: #03a8ff;
+}
