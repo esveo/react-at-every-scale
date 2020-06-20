@@ -1,0 +1,35 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background: radial-gradient(#3d3d3d, #000000);
+  color: #03a8ff;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  background: white;
+  transition: background 0.2s;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button:active {
+  background: #bbb;
+}
+
+button:focus {
+  outline: #03a8ff solid 2px;
+}

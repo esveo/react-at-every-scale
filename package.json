@@ -1,0 +1,22 @@
+{
+  "name": "react-at-every-scale",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "andreasroth <github@xent.de>",
+  "license": "MIT",
+  "scripts": {
+    "step-1:watch": "parcel ./src/step-1/index.html",
+    "step-2:watch": "parcel ./src/step-2/index.html"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.5"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
