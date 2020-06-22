@@ -21,7 +21,7 @@ function Feed() {
         height: "100%",
       }}
     >
-      <p style={{ flex: "0 0 auto" }}>Feed</p>
+      <p style={{ flex: "0 0 auto" }}>Startseite</p>
       <hr />
       <div
         style={{ flex: "1 1 auto", overflow: "auto", height: "100%" }}

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 
-function LoadingButton(props: { onClick: () => Promise<any> }) {
+function Button(props: any) {
+  return <button {...props}></button>;
+}
+
+function LoadingButton(props: { startLoading: () => Promise<any> }) {
   const [state, setState] = useState<"idle" | "loading">("idle");
 
   async function onClick() {
@@ -9,7 +13,7 @@ function LoadingButton(props: { onClick: () => Promise<any> }) {
 
     setState("loading");
     try {
-      await props.onClick();
+      await props.startLoading();
     } finally {
       setState("idle");
     }
@@ -35,7 +39,7 @@ function App() {
 
   return (
     <div>
-      <LoadingButton onClick={loadData}></LoadingButton>
+      <LoadingButton startLoading={loadData}></LoadingButton>
       {pokemon && (
         <ul>
           {pokemon.map((p) => (

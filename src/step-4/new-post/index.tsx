@@ -16,7 +16,7 @@ export function NewPost() {
           setValue("");
         }}
       >
-        <label>New Post:</label>
+        <label>Neuer Beitrag:</label>
         <input
           value={value}
           onChange={(e) => setValue(e.target.value)}
